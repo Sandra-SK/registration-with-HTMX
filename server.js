@@ -30,12 +30,12 @@ console.log(User)
 
 // Import des routes
 import { authRoutes } from './routes/authRoutes.js';
-//import profileRoutes from './routes/profileRoutes.js';
+import { userRoutes } from './routes/userRoutes.js';
 
 
 // Routes
 app.use('/auth', authRoutes);
-//app.use(profileRoutes);
+app.use(userRoutes);
 
 
 
