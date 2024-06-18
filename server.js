@@ -29,12 +29,12 @@ mongoose.connect(MONGODB_URI)
 console.log(User)
 
 // Import des routes
-//import authRoutes from './routes/authRoutes.js';
+import { authRoutes } from './routes/authRoutes.js';
 //import profileRoutes from './routes/profileRoutes.js';
 
 
 // Routes
-//app.use('/auth', authRoutes);
+app.use('/auth', authRoutes);
 //app.use(profileRoutes);
 
 
