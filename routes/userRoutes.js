@@ -1,7 +1,7 @@
 //userRoutes.js
 
 import express from 'express';
-import { createUser, getUserByEmail, updateUserPassword, deleteUser, User } from '../models/userModel.js';
+import { createUser, getUserByEmail, updateUserPassword, deleteUser } from '../controllers/userController.js';
 import { jwtMiddleware } from '../middleware/auth.js';
 
 
